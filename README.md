@@ -1,10 +1,10 @@
-# User_NodeJS_Express_Site_Fullstack
-Site fullstack
-Banco: Mysql
-Backend_API: NodeJS, Express e Dotenv
-Backend_BFF: NodeJS e Express
-Frontend: puro (HTML, CSS, JS)
+# User_NodeJS_Express_Site_Fullstack </br>
+Site fullstack </br>
+Banco: Mysql </br>
+Backend_API: NodeJS, Express e Dotenv </br>
+Backend_BFF: NodeJS e Express </br>
+Frontend: puro (HTML, CSS, JS) </br>
 
-Backend_BFF inspirado no padrão do NextJS {
-  (rota: pasta1/1/pasta2) == /pages/pasta1/[id]/pasta2/index.html
-}
+Backend_BFF inspirado no padrão do NextJS { </br>
+  (rota: pasta1/1/pasta2) == /pages/pasta1/[id]/pasta2/index.html </br>
+} </br>
