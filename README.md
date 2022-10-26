@@ -6,5 +6,5 @@ Backend_BFF: NodeJS e Express </br>
 Frontend: puro (HTML, CSS, JS) </br>
 
 Backend_BFF inspirado no padrão do NextJS { </br>
-  (rota: pasta1/1/pasta2) == /pages/pasta1/[id]/pasta2/index.html </br>
+&nbsp; &nbsp; &nbsp; (rota: pasta1/1/pasta2) == /pages/pasta1/[id]/pasta2/index.html </br>
 } </br>
