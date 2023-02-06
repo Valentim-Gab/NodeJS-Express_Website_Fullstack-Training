@@ -9,8 +9,7 @@ Backend_BFF (Web) inspired by the NextJS pattern {
 ```
 
 ```bash
-
-Using: {
+Using {
   Database:
     - MySQL;
     
