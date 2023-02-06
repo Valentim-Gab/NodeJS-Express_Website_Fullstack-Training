@@ -1,10 +1,26 @@
-# User_NodeJS_Express_Site_Fullstack </br>
-Site fullstack </br>
-Banco: Mysql </br>
-Backend_API: NodeJS, Express e Dotenv </br>
-Backend_BFF: NodeJS e Express </br>
-Frontend: puro (HTML, CSS, JS) </br>
+# NodeJS-Express Website Fullstack Training
+Website to learn how to make api and website using nodeJS and other technologies.
 
-Backend_BFF inspirado no padrão do NextJS { </br>
-&nbsp; &nbsp; &nbsp; (rota: pasta1/1/pasta2) == /pages/pasta1/[id]/pasta2/index.html </br>
+Backend_BFF (Web) inspired by the NextJS pattern { </br>
+&nbsp; &nbsp; &nbsp; (router: folder1/1/folder2) == /pages/folder1/[id]/folder2/index.html </br>
 } </br>
+
+```bash
+
+Using: {
+  Database:
+    - MySQL;
+    
+  API: 
+    - NodeJS;
+    - ExpressJS;
+    - Dotenv;
+    
+  WEB:
+    - NodeJS;
+    - Express;
+    - HTML;
+    - CSS;
+    - JavaScript.
+}
+```
