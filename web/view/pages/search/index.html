@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/user.js"></script>
+    <title>Pesquisar</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Início</a>
+        <a href="/search">Pesquisar</a>
+        <a href="/user">Cadastre-se</a>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <h1>Lista de usuários pesquisa</h1>
+        <div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+          <input type="text" id="searchInput" style="margin-bottom: 0; width: 600px;" />
+          <button onclick="searchUser()" style="margin-top: 0;">Pesquisar</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <!-- <th>Ação</th> -->
+            </tr>
+          </thead>
+          <tbody id="tabUserSearch">
+            <!-- Lista de dados do banco -->
+          </tbody>
+        </table>
+      </main>
+    </section>
+  </body>
+</html>

@@ -13,6 +13,12 @@ router.get(`/${diretorio}/getAll`, async (req, res) => {
     return res.status(200).json(await userService.getUsersAll())
 })
 
+router.get(`/${diretorio}/search/:input`, async (req, res) => {
+    const { input } = req.params
+
+    return res.status(200).json(await userService.search(input))
+})
+
 router.post(`/${diretorio}/add`, userMiddleware.validateBody, async (req, res) => {
     const addedUser = await userService.addUser(req.body)
 

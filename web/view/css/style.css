@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100%;
-    background: linear-gradient(180deg, #070707 0%, #404040 100%);
+    background: linear-gradient(180deg, #070707 0%, rgb(48, 7, 41) 100%);
     color: #ffffff;
 }
 
@@ -86,7 +86,7 @@ main form label {
     line-height: 30px;
 }
 
-main form input {
+main form input, main input {
     height: 30px;
     background: var(--corCampo);
     box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.5);

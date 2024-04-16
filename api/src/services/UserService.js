@@ -10,6 +10,11 @@ const getUsersAll = async () => {
     return users
 }
 
+const search = async (input) => {
+    const users = await userModel.search(input)
+    return users
+}
+
 const addUser = async (task) => {
     const addedUser = await userModel.addUser(task)
     return addedUser
@@ -30,5 +35,6 @@ module.exports = {
     addUser,
     deleteUser,
     updateUser,
-    getUserOne
+    getUserOne,
+    search
 }

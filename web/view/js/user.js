@@ -8,6 +8,13 @@ const listar = async () => {
     res.map(user => addUserLista(user))
 }
 
+const searchUser = async () => {
+    let searchInput = document.getElementById('searchInput').value
+
+    const res = await fetch(`${API_URL}/user/search/${searchInput}`).then((data) => data.json())
+    res.map(user => addUserListaSearch(user))
+}
+
 const getOne = async (id) => {
     const res = await fetch(`${API_URL}/user/getOne/${id}/`).then((data) => data.json())
     return (res[0])
@@ -40,6 +47,31 @@ const addUserLista = ({ id, nome, idade }) => {
 
     tabUser.appendChild(trBody)
 }
+
+const addUserListaSearch = ({ id, nome, idade }) => {
+    const tabUserSearch = document.getElementById('tabUserSearch')
+
+    let trBody = document.createElement('tr')
+    let tdNome = document.createElement('td')
+    let tdIdade = document.createElement('td')
+    // let tdAcao = document.createElement('td')
+    let buttonApagar = document.createElement('button')
+    let buttonAtualizar = document.createElement('button')
+
+    tdNome.innerHTML = nome
+    tdIdade.innerHTML = idade
+
+    // tdAcao.append(buttonAtualizar)
+    // tdAcao.append(document.createElement('br'))
+    // tdAcao.append(buttonApagar)
+
+    trBody.appendChild(tdNome)
+    trBody.appendChild(tdIdade)
+    // trBody.appendChild(tdAcao)
+
+    tabUserSearch.appendChild(trBody)
+}
+
 
 const newUser = async () => {
     const update = {
